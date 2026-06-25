@@ -1,0 +1,33 @@
+{
+  "name": "ai-search-content-engine",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "worker": "ts-node --transpile-only worker/worker.ts"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "@prisma/client": "latest",
+    "bullmq": "latest",
+    "ioredis": "latest",
+    "axios": "latest",
+    "clsx": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "prisma": "latest",
+    "ts-node": "latest",
+    "eslint": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest"
+  }
+}
